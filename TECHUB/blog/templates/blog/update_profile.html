@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update_profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header class="header">
+
+<section class="flex">
+
+<a href="home.html" class="logo">TECHUB</a>
+
+<nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="icons">
+    <div id="user-btn" class="fas fa-user"></div>
+    <div id="menu-btn" class="fas fa-bars"></div>
+</div>
+
+<div class="profile">
+    <div class="flex">
+        <a href="profile.html" class="btn">Profile</a>
+        <a href="#" class="delete-btn">Logout</a>
+    </div>
+    <p class="account"><a href="login.html">Login</a>/<a href="register.html">Register</a></p>
+</div>
+
+</section>
+
+</header>
+
+<section class="form-container">
+
+    <form action="" method="POST">
+       <h3>Update Profile</h3>
+       <input type="text" required maxlength="20" name="name" placeholder="enter your name" class="box" oninput="this.value = this.value.replace(/\s/g, '')" value="frank samuel">
+       <input type="email" required maxlength="50" name="email" placeholder="enter your email" class="box" oninput="this.value = this.value.replace(/\s/g, '')" value="franklinsamuel442@gmai.com">
+       <input type="numner" min="0" max="9999999999" onkeypress="if(this.value.length == 10)  false;" placeholder="enter your number" required class="box" name="number" value="1234567890">
+       <input type="password" maxlength="20" name="old_pass" placeholder="enter your old password" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+       <input type="password" maxlength="20" name="new_pass" placeholder="enter your new password" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+       <input type="password" maxlength="20" name="confirm_pass" placeholder="confirm your new password" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+       <input type="submit" value="update now" class="btn" name="submit">
+    </form>
+ 
+ </section>
+
+
+
+ <footer class="footer">
+
+    <section class="box-container">
+ 
+       <div class="box">
+          <img src="email-icon.png" alt="">
+          <h3>Our Email</h3>
+          <a href="info@techub.com">info@techub.com</a>
+       </div>
+       <div class="box">
+          <img src="map-icon.png" alt="">
+          <h3>Address</h3>
+          <a href="#">Digital Art Library</a>
+       </div>
+ 
+       <div class="box">
+          <img src="phone-icon.png" alt="">
+          <h3>Number</h3>
+          <a href="">08069489872</a>
+       </div>
+ 
+    </section>
+ 
+    <div class="credit"><span>Digital Art Library</span> | All Rights Reserved!</div>
+ </footer> 
+
+
+
+<!--custom file-->
+<script src="script.js"></script>
+</body>
+</html>

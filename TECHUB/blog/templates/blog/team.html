@@ -1,0 +1,127 @@
+{% extends 'blog/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="stylesheet" href="team.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+
+
+<!--ends-->
+
+
+   <h1 class="title">The People Involved</h1>
+
+
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="hero-section move">
+                <div class="gallery one">
+                    <div class="image-section">
+                        <img id="smt" src="smart.png" alt="">
+                    </div>
+                    <div class="caption" id="width">
+                        <p id="john">Johnson Adura </P>
+                        <p id="john">A Full Stack Developer</p>
+                    </div>
+                </div>
+                <div class="gallery two">
+                    <div class="image-section">
+                        <img src="emma.png" alt="">
+                    </div>
+                    <div class="caption" id="width1" >
+                        <h2>Nkem Emmanuel </h2>
+                        <p>A Full Stack Developer</p>
+                    </div>
+                </div>
+                <div class="gallery three">
+                    <div class="image-section">
+                        <img src="ifeanyi.png" alt="">
+                    </div>
+                    <div class="caption" id="width1" >
+                        <h2>Ifeanyi Emmanuel</h2>
+                        <p>A Full Stack Developer</p>
+                    </div>
+                </div>
+                <div class="gallery four">
+                    <div class="image-section">
+                        <img src="somzy.png" alt="">
+                    </div>
+                    <div class="caption" id="width1" >
+                        <h2>Okafor Somto </h2>
+                        <p>A Full Stack Developer</p>
+                    </div>
+                </div>
+                <div class="gallery five">
+                    <div class="image-section">
+                        <img src="youngcliff.png" alt="">
+                    </div>
+                    <div class="caption" id="width1" >
+                        <h2>Young-cliff</h2>
+                        <p>A Full Stack Developer</p>
+                    </div>
+                </div>
+                <div class="gallery six">
+                    <div class="image-section">
+                        <img src="smart.png" alt="">
+                    </div>
+                    <div class="caption" id="width1" >
+                        <h2>Paul</h2>
+                        <p>A Full Stack Developer</p>
+                    </div>
+                </div>
+                <div class="gallery seven">
+                    <div class="image-section">
+                        <img src="emma.png" alt="">
+                    </div>
+                    <div class="caption" id="width1" >
+                        <h2>Fredrick Obiekwu</h2>
+                        <p>A Full Stack Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+
+
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+<script>
+
+var swiper = new Swiper(".home-slider", {
+   loop:true,
+   grabCursor:true,
+   effect: "flip",
+   pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+   },
+});
+
+</script>
+
+<!--custom file-->
+<script src="script.js"></script>
+</body>
+</html>
+{% endblock %}

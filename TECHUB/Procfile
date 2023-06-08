@@ -1,0 +1,1 @@
+web gunicorn TECHUB.wsgi :application --log-file -

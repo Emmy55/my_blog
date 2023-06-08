@@ -1,0 +1,150 @@
+{% extends 'blog/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="stylesheet" href="{% static 'blog/style.css' %}">
+</head>
+<body>
+  
+
+
+                                                                                                                                     
+
+<!--ends-->
+
+<section class="home">
+
+    <div class="swiper home-slider">
+ 
+       <div class="swiper-wrapper">
+ 
+          <div class="swiper-slide slide">
+             <div class="content">
+                <span><h1>YOUR HOME <br>FOR TECH <br>UPDATES</h1></span>
+                <h3><p>Python, Django, Dart, C++, C#, Ruby, TECHUB is your home for updated tech news</p></h3>
+             </div>
+             <div class="image">
+                <img src="tech.png" alt="">
+             </div>
+          </div>
+ 
+ 
+       </div>
+ 
+       <div class="swiper-pagination"></div>
+ 
+    </div>                
+ 
+ </section>
+
+
+<section class="products">
+
+   <h1 class="title">Latest Posts</h1>
+
+   <div class="box-container">
+
+      <form accept="" method="post" class="box">
+         <img src="stuff.jpg" alt="">
+         <div class="name">5 Ways I’m Using AI to Make Money in 2023</div>
+      </form>
+      
+      <form accept="" method="post" class="box">
+         <img src="stuff.jpg" alt="">
+         <div class="name">14 things I wish I knew at 25 (now that I’m 38)</div>
+      </form>
+      
+      <form accept="" method="post" class="box">
+         <img src="{% static 'blog/money.jpg' %}" alt="">
+         <div class="name">5 useful and powerful Jupyter Notebook efficiency plugins</div>
+      </form>
+      
+      <form accept="" method="post" class="box">
+         <img src="stuff.jpg" alt="">
+         <div class="name">20 extremely useful single-line Python codes</div>
+      </form>
+      
+      <form accept="" method="post" class="box">
+         <img src="stuff.jpg"alt="">
+         <div class="name"> Uploading Multiple Images on Cloudinary using Express Js and MongoDB </div>
+      </form>
+      
+      <form accept="" method="post" class="box">
+         <img src="stuff.jpg" alt="">
+         <div class="name">Can ChatGPT Write Better SQL than a Data Analyst?</div>
+      </form>
+      
+
+
+   </div>
+
+   <div class="more-btn">
+      <a href="test.html" class="btn">veiw all</a>
+   </div>
+
+</section>
+
+
+<footer class="footer">
+
+    <!-- <section class="box-container">
+ 
+       <div class="box">
+          <img src="email-icon.png" alt="">
+          <h3>our email</h3>
+          <a href="">info@techub.com</a>
+       </div>
+       <div class="box">
+          <img src="map-icon.png" alt="">
+          <h3>Address</h3>
+          <a href="#">Digital Art Library</a>
+       </div>
+ 
+       <div class="box">
+          <img src="phone-icon.png" alt="">
+          <h3>Number</h3>
+          <a href="">08069489872</a>
+       </div>
+ 
+    </section> -->
+ 
+</footer> 
+
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+<script>
+
+var swiper = new Swiper(".home-slider", {
+   loop:true,
+   grabCursor:true,
+   effect: "flip",
+   pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+   },
+});
+
+</script>
+
+<!--custom file-->
+<script src="script.js"></script>
+</body>
+</html>
+
+{% endblock %}

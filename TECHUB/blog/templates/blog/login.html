@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header class="header">
+
+<section class="flex">
+
+<a href="home.html" class="logo">TECHUB</a>
+
+<nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="icons">
+    <div id="user-btn" class="fas fa-user"></div>
+    <div id="menu-btn" class="fas fa-bars"></div>
+</div>
+
+<div class="profile">
+    <div class="flex">
+        <a href="profile.html" class="btn">profile</a>
+        <a href="#" class="delete-btn">logout</a>
+    </div>
+    <p class="account"><a href="login.html">login</a> or <a href="register.html">register</a></p>
+</div>
+
+</section>
+
+</header>
+
+<section class="form-container">
+
+    <form action="" method="post">
+       <h3>login now</h3>
+       <input type="email" required maxlength="50" name="email" placeholder="enter your email" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+       <input type="password" required maxlength="20" name="pass" placeholder="enter your password" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+       <input type="submit" value="login now" class="btn" name="submit">
+       <p>don't have an account? <a href="register.html">register now</a></p>
+    </form>
+ 
+ </section>
+ 
+
+ <footer class="footer">
+
+    <section class="box-container">
+ 
+       <div class="box">
+          <img src="email-icon.png" alt="">
+          <h3>our email</h3>
+          <a href="">info@techub.com</a>
+       </div>
+       <div class="box">
+          <img src="map-icon.png" alt="">
+          <h3>Address</h3>
+          <a href="#">Digital Art Library</a>
+       </div>
+ 
+       <div class="box">
+          <img src="phone-icon.png" alt="">
+          <h3>Number</h3>
+          <a href="">08069489872</a>
+       </div>
+ 
+    </section>
+ 
+    <div class="credit"><span>Digital Art Library</span> | All Rights Reserved!</div>
+ </footer>  
+
+
+<!--custom file-->
+<script src="script.js"></script>
+</body>
+</html>

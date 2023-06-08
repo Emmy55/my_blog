@@ -1,0 +1,86 @@
+{% extends 'blog/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <style>
+      .header .flex .navbar a:nth-child(2){
+         color: #777;   
+   }
+   #home{
+         color: black;
+   }
+   
+   </style>
+</head>
+<body>
+    
+
+
+
+<div class="heading">
+    <h3>about us</h3>
+    <p><a href="home.html">home </a> <span> / about</span></p>
+ </div>
+ 
+ <section class="about">
+ 
+    <div class="row">
+ 
+ 
+       <div class="content">
+          <h3> Techub Offers Future Upadtes on Tech,<br>Crypto and many Others in the Industry.<br>Latest Upgrades on Microsoft, Apple, and Others<br>Coded and managed By Digital Art Libray Students.</h3>
+          <p>About <span class="dal">DIGITAL ART LIBRAY</span><br>
+            Digital Art Libray Offers lessons on <br> Graphics Design UI/UX and Coding <br>
+            courses you can learn under Coding: <br> HTML5 & CSS3 JAVASCRIPT DJANGO<br>
+        </div>
+        <br> 
+ </section>
+ 
+
+ 
+ 
+ <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+ 
+ <script src="js/script.js"></script>
+ 
+ <script>
+ 
+ var swiper = new Swiper(".reviews-slider", {
+    loop:true,
+    grabCursor:true,
+             spaceBetween: 20,
+    pagination: {
+       el: ".swiper-pagination",
+    },
+    breakpoints: {
+       550: {
+         slidesPerView: 1,
+       },
+       768: {
+         slidesPerView: 2,
+       },
+       1024: {
+         slidesPerView: 3,
+       },
+    },
+ });
+ 
+ </script>
+ 
+ </body>
+ </html>
+
+<!--custom file-->
+<script src="script.js"></script>
+</body>
+</html>
+{% endblock %}
